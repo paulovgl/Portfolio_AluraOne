@@ -1,42 +1,65 @@
+/* Styles de Elementos Gerais */
 body {
-    box-sizing: border-box;
-    font-family: 'Raleway';
-    background-color: var(--corDeFundo);
-    padding: 1rem;
+  box-sizing: border-box;
+  font-family: "Raleway";
+  background-color: var(--corDeFundo);
+  padding: 1rem;
+  color: var(--softBlack);
 }
 
 h2 {
-    font-size: 1.375rem;
-    font-weight: 700;
+  font-size: 1.375rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--softBlack);
+}
+
+p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
 }
 
 /* header */
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 header img {
-    width: 1.5rem;
-    margin-right: 0.2rem;
+  width: 1.5rem;
+  margin-right: 0.2rem;
 }
 
 header h1 {
-    display: flex;
-    font-weight: 700;
-    align-items: center;
+  display: flex;
+  font-weight: 700;
+  align-items: center;
+}
+
+header a {
+  font-size: 0.875rem;
+  font-weight: 400;
 }
 
 /* Resume */
 .resume-container img {
-    width: 30vw;
-    height: 30vw;
-    border-radius: 50%;
-    margin-bottom: 1rem;
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
 .resume-content h2 {
+}
 
+.resume-links {
+    display: flex;
+    justify-content: space-between;
 }
