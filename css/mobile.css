@@ -1,0 +1,42 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Raleway';
+    background-color: var(--corDeFundo);
+    padding: 1rem;
+}
+
+h2 {
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+header img {
+    width: 1.5rem;
+    margin-right: 0.2rem;
+}
+
+header h1 {
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+}
+
+/* Resume */
+.resume-container img {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.resume-content h2 {
+
+}
