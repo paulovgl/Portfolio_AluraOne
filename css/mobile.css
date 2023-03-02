@@ -25,6 +25,8 @@ p {
   font-size: 0.875rem;
   font-weight: 400;
   margin-bottom: 1rem;
+  line-height: 1.5;
+  text-align: justify;
 }
 
 /* header */
@@ -70,4 +72,8 @@ header a {
 /* About */
 .about-container {
   background-color: var(--softBlue);
+}
+
+.about-container p {
+  margin-bottom: 0;
 }
