@@ -3,8 +3,11 @@ body {
   box-sizing: border-box;
   font-family: "Raleway";
   background-color: var(--corDeFundo);
-  padding: 1rem;
   color: var(--softBlack);
+}
+
+section, header{
+  padding: 1rem;
 }
 
 h2 {
@@ -29,7 +32,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1rem;
 }
 
 header img {
@@ -56,10 +58,16 @@ header a {
   margin-bottom: 1rem;
 }
 
-.resume-content h2 {
-}
-
 .resume-links {
     display: flex;
     justify-content: space-between;
+}
+
+.resume-links a {
+  font-weight: 600;
+}
+
+/* About */
+.about-container {
+  background-color: var(--softBlue);
 }
