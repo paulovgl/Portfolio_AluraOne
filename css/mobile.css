@@ -6,8 +6,7 @@ body {
   color: var(--softBlack);
 }
 
-section,
-header {
+section, header{
   padding: 1rem;
 }
 
@@ -30,10 +29,6 @@ p {
   text-align: justify;
 }
 
-img {
-  width: 1.5rem;
-}
-
 /* header */
 header {
   display: flex;
@@ -42,6 +37,7 @@ header {
 }
 
 header img {
+  width: 1.5rem;
   margin-right: 0.2rem;
 }
 
@@ -65,8 +61,8 @@ header a {
 }
 
 .resume-links {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .resume-links a {
@@ -81,51 +77,3 @@ header a {
 .about-container p {
   margin-bottom: 0;
 }
-
-/* Skills and Hobbies Cards */
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  width: 35vw;
-  height: 25vw;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  background-color: var(--white);
-}
-
-.card__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.card__text {
-  font-weight: 700;
-  font-size: 1rem;
-}
-
-.card:nth-last-child(-n + 2),
-.card__text {
-  margin-bottom: 0;
-}
-
-.card__icon {
-  display: block;
-  color: var(--strongBlue);
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Skills and Hobbies */
-.skills-container, .hobbies-container {
-  text-align: center;
-}
-
-.hobbies-container .card img {
-  width: 2rem;
-  margin-bottom: 0.5rem;
-  color: var(--strongBlue);
-}
-
