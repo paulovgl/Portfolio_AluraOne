@@ -34,6 +34,13 @@ img {
   width: 1.5rem;
 }
 
+strong {
+  font-weight: 700;
+}
+
+br {
+}
+
 /* header */
 header {
   display: flex;
@@ -129,3 +136,37 @@ header a {
   color: var(--strongBlue);
 }
 
+/* Graduation */
+.graduation-container {
+  background-color: var(--softBlue);
+  text-align: center;
+}
+
+.graduation__card {
+  margin-bottom: 1rem;
+}
+
+.graduation__list {
+  padding: 1rem;
+}
+
+.graduation__card__content {
+  background-color: var(--white);
+}
+
+.graduation__card__img {
+  width: 5rem;
+  padding: 0.5rem;
+  height: 10vh;
+}
+
+.graduation__card__title {
+  background-color: var(--softBlue);
+  padding-top: 0.5rem;
+  text-align: start;
+}
+
+.graduation__card__title--courseName {
+  display: block;
+  margin-bottom: 0.5rem;
+}
