@@ -38,6 +38,29 @@ strong {
   font-weight: 700;
 }
 
+span {
+  display: block;
+}
+
+/* Buttons */
+.works__button--unfilled {
+  padding: 0.75rem 1rem;
+  color: var(--strongBlue);
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: 1px solid var(--strongBlue);
+  margin-right: 1rem;
+}
+
+.works__button--filled {
+  padding: 0.75rem 1rem;
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: 1px solid var(--strongBlue);
+  background-color: var(--strongBlue);
+}
+
 /* header */
 header {
   display: flex;
@@ -177,4 +200,24 @@ header a {
 .works-container {
   padding: 2rem;
   text-align: center;
+}
+
+.works__content {
+  text-align: start;
+  margin-bottom: 4rem;
+}
+
+.works__img {
+  width: 100%;
+  box-shadow: 7px 7px 5px var(--softBlack);
+  margin-bottom: 1rem;
+}
+
+.works__title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.works__subTitle {
+  font-weight: 500;
 }
