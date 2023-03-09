@@ -48,7 +48,7 @@ form {
 }
 
 /* Buttons */
-.works__button--unfilled {
+.general__button--unfilled {
   padding: 0.75rem 1rem;
   color: var(--strongBlue);
   font-size: 0.875rem;
@@ -57,7 +57,7 @@ form {
   margin-right: 1rem;
 }
 
-.works__button--filled {
+.general__button--filled {
   padding: 0.75rem 1rem;
   color: var(--white);
   font-size: 0.875rem;
@@ -267,7 +267,6 @@ header a {
 }
 
 .contato__input--textarea {
-  resize: none;
   height: 8rem;
   background-color: var(--white);
   box-shadow: 0 0 0 0;
@@ -278,6 +277,7 @@ header a {
   caret-color: var(--softBlack);
   font-family: "Raleway", cursive;
   padding: 0.5rem 0.75rem;
+  resize: none;
 }
 
 .contato__input--textarea::placeholder {
@@ -291,9 +291,9 @@ header a {
 
 .contato__label {
   color: var(--softGray);
+  left: 0.75rem;
   position: absolute;
   top: 1.5rem;
-  left: 0.75rem;
   transition: 100ms all ease-in-out;
 }
 
@@ -312,4 +312,24 @@ header a {
   color: var(--strongBlue);
   font-size: 0.75rem;
   top: 0.5rem;
+}
+
+/* Footer - Copyright */
+.copyright {
+  align-items: center;
+  display: flex;
+  background-color: var(--white);
+  justify-content: center;
+  padding: 2rem;
+}
+
+.copyright p {
+  margin: 0;
+  text-align: center;
+}
+
+.copyright p span {
+  color: var(--softBlack);
+  font-size: 1rem;
+  font-weight: 500;
 }
