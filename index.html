@@ -310,22 +310,44 @@
           </div>
 
           <form>
-            <label>
-              Nome
-              <input type="text" />
-            </label>
-            <label>
-              E-mail
-              <input type="email" />
-            </label>
-            <label>
-              Assunto
-              <input type="text" />
-            </label>
-            <label>
-              Mensagem
-              <textarea></textarea>
-            </label>
+            <div class="contato__inputContainer">
+              <input
+                class="contato__input"
+                id="contato__input--nome"
+                placeholder=" "
+                type="text"
+              /><label for="contato__input--nome" class="contato__label">
+                Nome
+              </label>
+            </div>
+            <div class="contato__inputContainer">
+              <input
+                class="contato__input"
+                id="contato__input--email"
+                placeholder=" "
+                type="email"
+              /><label for="contato__input--email" class="contato__label">
+                E-mail
+              </label>
+            </div>
+            <div class="contato__inputContainer">
+              <input
+                class="contato__input"
+                id="contato__input--assunto"
+                placeholder=" "
+                type="text"
+              /><label for="contato__input--assunto" class="contato__label">
+                Assunto
+              </label>
+            </div>
+            <div class="contato__inputContainer">
+              <textarea
+                class="contato__input--textarea"
+                id="contato__input--mensagem"
+                placeholder="Mensagem"
+                type="text"
+              ></textarea>
+            </div>
 
             <button type="submit"></button>
           </form>

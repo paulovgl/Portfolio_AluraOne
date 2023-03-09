@@ -1,7 +1,7 @@
 /* Styles de Elementos Gerais */
 body {
   box-sizing: border-box;
-  font-family: "Raleway";
+  font-family: "Raleway", cursive;
   background-color: var(--corDeFundo);
   color: var(--softBlack);
 }
@@ -40,6 +40,11 @@ strong {
 
 span {
   display: block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Buttons */
@@ -150,7 +155,8 @@ header a {
 }
 
 /* Skills and Hobbies */
-.skills-container, .hobbies-container {
+.skills-container,
+.hobbies-container {
   text-align: center;
 }
 
@@ -220,4 +226,90 @@ header a {
 
 .works__subTitle {
   font-weight: 500;
+}
+
+/* Footer - Contato */
+.contato-container {
+  padding: 2rem;
+  background-color: var(--softBlue);
+}
+
+.contato-title {
+  margin-bottom: 2rem;
+}
+
+.contato-title h2 {
+  margin-bottom: 0.5rem;
+}
+
+.contato__inputContainer {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  height: auto;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.contato__input {
+  background-color: var(--white);
+  box-shadow: 0 0 0 0;
+  border: none;
+  border-bottom: 2px solid var(--softGray);
+  border-radius: 4px;
+  color: var(--softBlack);
+  caret-color: var(--softBlack);
+  font-family: "Raleway", cursive;
+  padding: 0 0.75rem;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+  transition: 100ms all ease-in-out;
+}
+
+.contato__input--textarea {
+  resize: none;
+  height: 8rem;
+  background-color: var(--white);
+  box-shadow: 0 0 0 0;
+  border: none;
+  border-bottom: 2px solid var(--softGray);
+  border-radius: 4px;
+  color: var(--softBlack);
+  caret-color: var(--softBlack);
+  font-family: "Raleway", cursive;
+  padding: 0.5rem 0.75rem;
+}
+
+.contato__input--textarea::placeholder {
+  color: var(--softGray);
+}
+
+.contato__input--textarea:focus {
+  border-bottom: 2px solid var(--strongBlue);
+  caret-color: var(--strongBlue);
+}
+
+.contato__label {
+  color: var(--softGray);
+  position: absolute;
+  top: 1.5rem;
+  left: 0.75rem;
+  transition: 100ms all ease-in-out;
+}
+
+.contato__input:focus {
+  border-bottom: 2px solid var(--strongBlue);
+  caret-color: var(--strongBlue);
+}
+
+.contato__input:not(:placeholder-shown) + .contato__label {
+  color: var(--softGray);
+  font-size: 0.75rem;
+  top: 0.5rem;
+}
+
+.contato__input:focus + .contato__label {
+  color: var(--strongBlue);
+  font-size: 0.75rem;
+  top: 0.5rem;
 }
