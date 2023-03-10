@@ -1,0 +1,19 @@
+@media (min-width: 768px) {
+    /* Header */
+    header a {
+        font-weight: 700;
+    }
+
+    /* About */
+    .resume-container img {
+        float: right;
+        width: 9.125rem;
+        height: 9.125rem;
+        padding: 2rem;
+        margin: 0;
+      }
+    
+      .resume-content {
+        padding: 2rem 0;
+      }
+}
