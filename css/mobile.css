@@ -49,21 +49,23 @@ form {
 
 /* Buttons */
 .general__button--unfilled {
-  padding: 0.75rem 1rem;
+  border: 1px solid var(--strongBlue);
   color: var(--strongBlue);
+  display: inline-block;
+  padding: 0.75rem 1rem;
   font-size: 0.875rem;
   font-weight: 600;
-  border: 1px solid var(--strongBlue);
   margin-right: 1rem;
 }
 
 .general__button--filled {
-  padding: 0.75rem 1rem;
-  color: var(--white);
-  font-size: 0.875rem;
-  font-weight: 600;
   border: 1px solid var(--strongBlue);
   background-color: var(--strongBlue);
+  color: var(--white);
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
 }
 
 /* header */
@@ -209,8 +211,17 @@ header a {
 }
 
 .works__content {
-  text-align: start;
   margin-bottom: 4rem;
+  height: fit-content;
+  text-align: start;
+}
+
+.works__content:last-child {
+  margin-bottom: 0;
+}
+
+.works__content p {
+  margin-bottom: 0.5rem;
 }
 
 .works__img {
