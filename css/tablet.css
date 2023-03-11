@@ -41,18 +41,14 @@
   }
 
   /* Skills and Hobbies Cards */
-  .card {
-    width: 25%;
+  .card, .card:nth-child(2n) {
+    width: calc(30% - 2rem);
     height: 12vw;
-    margin-right: 5.6818%;
+    margin-right: 5%;
   }
 
   .card:nth-child(3n) {
     margin-right: 0;
-  }
-
-  .card__list {
-    justify-content: flex-start;
   }
 
   /* Skills and Hobbies */

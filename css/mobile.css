@@ -122,31 +122,35 @@ header a {
 
 /* Skills and Hobbies Cards */
 .card {
+  align-items: flex-start;
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: flex-end;
-  width: 35vw;
+  width: calc(45% - 2rem);
   height: 25vw;
   padding: 1rem;
   margin-bottom: 1rem;
-  background-color: var(--white);
+  margin-right: 10%;
 }
 
-.card__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.card__text {
-  font-weight: 700;
-  font-size: 1rem;
+.card:nth-child(2n) {
+  margin-right: 0;
 }
 
 .card:nth-last-child(-n + 2),
 .card__text {
   margin-bottom: 0;
+}
+
+.card__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card__text {
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 .card__icon {
