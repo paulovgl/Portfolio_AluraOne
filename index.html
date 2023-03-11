@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="css/var.css" />
     <link rel="stylesheet" href="css/mobile.css" />
     <link rel="stylesheet" href="css/tablet.css" />
+    <link rel="stylesheet" href="css/desktop.css" />
   </head>
 
   <body>
@@ -40,7 +41,16 @@
         <img src="assets/horse_icon.svg" alt="Cavalo Ícone" />
         Paulo Victor
       </h1>
-      <a href="mailto:ditoprimo@gmail.com">ditoprimo@gmail.com</a>
+      <nav class="header__menu">
+        <ul class="header__menu__list">
+          <li><a class="header__menu__link" href="#">Sobre mim</a></li>
+          <li><a class="header__menu__link" href="#">Skills</a></li>
+          <li><a class="header__menu__link" href="#">Hobbies</a></li>
+          <li><a class="header__menu__link" href="#">Formação</a></li>
+          <li><a class="header__menu__link" href="#">Projetos</a></li>
+          <li><a class="header__menu__link header__menu__link--bold" href="mailto:ditoprimo@gmail.com">ditoprimo@gmail.com</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
@@ -68,25 +78,26 @@
         </div>
       </section>
 
-      <section class="about__container">
-        <h2>Sobre Mim</h2>
-        <p>
-          Sou graduado em Redes de Computadores pela Estácio e Técnico pelo
-          Senai, possuo conhecimento na criação de aplicações Web e Mobile
-          utilizando NodeJS (ReactJS/React Native), também tenho noções de
-          Flutter, Firebase e Android Nativo. Também tenho conhecimento em Redux
-          e Typescript. <br />
-          <br />
-          Comecei minha trajetória na programação com aplicativos mobile
-          testando várias linguagens e frameworks até achar qual realmente eu
-          queria trabalhar e dentre muitas escolhi o React, mas depois de tudo
-          isso, descobri que desenvolvimento web era minha paixão então resolvi
-          estudar mais sobre as linguagens e frameworks em volta desse cenário e
-          como eu já tinha conhecimentos prévios em React Native a transição foi
-          relativamente fácil para o React.Js.
-        </p>
-      </section>
-
+      <div class="general_container--blueBackgroung">
+        <section class="about__container">
+          <h2>Sobre Mim</h2>
+          <p>
+            Sou graduado em Redes de Computadores pela Estácio e Técnico pelo
+            Senai, possuo conhecimento na criação de aplicações Web e Mobile
+            utilizando NodeJS (ReactJS/React Native), também tenho noções de
+            Flutter, Firebase e Android Nativo. Também tenho conhecimento em
+            Redux e Typescript. <br />
+            <br />
+            Comecei minha trajetória na programação com aplicativos mobile
+            testando várias linguagens e frameworks até achar qual realmente eu
+            queria trabalhar e dentre muitas escolhi o React, mas depois de tudo
+            isso, descobri que desenvolvimento web era minha paixão então
+            resolvi estudar mais sobre as linguagens e frameworks em volta desse
+            cenário e como eu já tinha conhecimentos prévios em React Native a
+            transição foi relativamente fácil para o React.Js.
+          </p>
+        </section>
+      </div>
       <section class="skills__container">
         <h2>Skills</h2>
         <ul class="card__list">
@@ -151,104 +162,106 @@
         </ul>
       </section>
 
-      <section class="graduation__container">
-        <h2>Graduação acadêmica</h2>
-        <ol class="graduation__list">
-          <li class="graduation__card">
-            <figure class="graduation__card__content">
-              <img
-                class="graduation__card__img"
-                src="./assets/logo_ciscoAcademy.svg"
-                alt="Logo Cisco Networking Academy"
-              />
-              <figcaption class="graduation__card__title">
-                <span class="graduation__card__title--courseName"
-                  ><strong>Curso: IT Essentials</strong></span
-                >
-                <span>2017 - Cisco Networking Academy</span>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="graduation__card">
-            <figure class="graduation__card__content">
-              <img
-                class="graduation__card__img"
-                src="./assets/logo_ciscoAcademy.svg"
-                alt="Logo Cisco Networking Academy"
-              />
-              <figcaption class="graduation__card__title">
-                <span class="graduation__card__title--courseName"
-                  ><strong>Curso: Introduction to Cybersecurity</strong></span
-                >
-                <span>2017 - Cisco Networking Academy</span>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="graduation__card">
-            <figure class="graduation__card__content">
-              <img
-                class="graduation__card__img"
-                src="./assets/logo_senai.svg"
-                alt="Logo SENAI"
-              />
-              <figcaption class="graduation__card__title">
-                <span class="graduation__card__title--courseName"
-                  ><strong>Curso: Desvendando a Industria 4.0</strong></span
-                >
-                <span>2017 - SENAI</span>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="graduation__card">
-            <figure class="graduation__card__content">
-              <img
-                class="graduation__card__img"
-                src="./assets/logo_senai.svg"
-                alt="Logo SENAI"
-              />
-              <figcaption class="graduation__card__title">
-                <span class="graduation__card__title--courseName"
-                  ><strong> Técnico: Redes de Computadores</strong></span
-                >
-                <span>2018 - SENAI</span>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="graduation__card">
-            <figure class="graduation__card__content">
-              <img
-                class="graduation__card__img"
-                src="./assets/logo_coursera.svg"
-                alt="Logo Coursera"
-              />
-              <figcaption class="graduation__card__title">
-                <span class="graduation__card__title--courseName"
-                  ><strong
-                    >Curso: Programming for Everybody (Getting Started with
-                    Python)</strong
-                  ></span
-                >
-                <span>2020 - Coursera</span>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="graduation__card">
-            <figure class="graduation__card__content">
-              <img
-                class="graduation__card__img"
-                src="./assets/logo_estacio.svg"
-                alt="Logo Estácio"
-              />
-              <figcaption class="graduation__card__title">
-                <span class="graduation__card__title--courseName"
-                  ><strong>Tecnólogo: Redes de Computadores</strong></span
-                >
-                <span>2021 - Estácio de Sá</span>
-              </figcaption>
-            </figure>
-          </li>
-        </ol>
-      </section>
+      <div class="general_container--blueBackgroung">
+        <section class="graduation__container">
+          <h2>Graduação acadêmica</h2>
+          <ol class="graduation__list">
+            <li class="graduation__card">
+              <figure class="graduation__card__content">
+                <img
+                  class="graduation__card__img"
+                  src="./assets/logo_ciscoAcademy.svg"
+                  alt="Logo Cisco Networking Academy"
+                />
+                <figcaption class="graduation__card__title">
+                  <span class="graduation__card__title--courseName"
+                    ><strong>Curso: IT Essentials</strong></span
+                  >
+                  <span>2017 - Cisco Networking Academy</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="graduation__card">
+              <figure class="graduation__card__content">
+                <img
+                  class="graduation__card__img"
+                  src="./assets/logo_ciscoAcademy.svg"
+                  alt="Logo Cisco Networking Academy"
+                />
+                <figcaption class="graduation__card__title">
+                  <span class="graduation__card__title--courseName"
+                    ><strong>Curso: Introduction to Cybersecurity</strong></span
+                  >
+                  <span>2017 - Cisco Networking Academy</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="graduation__card">
+              <figure class="graduation__card__content">
+                <img
+                  class="graduation__card__img"
+                  src="./assets/logo_senai.svg"
+                  alt="Logo SENAI"
+                />
+                <figcaption class="graduation__card__title">
+                  <span class="graduation__card__title--courseName"
+                    ><strong>Curso: Desvendando a Industria 4.0</strong></span
+                  >
+                  <span>2017 - SENAI</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="graduation__card">
+              <figure class="graduation__card__content">
+                <img
+                  class="graduation__card__img"
+                  src="./assets/logo_senai.svg"
+                  alt="Logo SENAI"
+                />
+                <figcaption class="graduation__card__title">
+                  <span class="graduation__card__title--courseName"
+                    ><strong> Técnico: Redes de Computadores</strong></span
+                  >
+                  <span>2018 - SENAI</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="graduation__card">
+              <figure class="graduation__card__content">
+                <img
+                  class="graduation__card__img"
+                  src="./assets/logo_coursera.svg"
+                  alt="Logo Coursera"
+                />
+                <figcaption class="graduation__card__title">
+                  <span class="graduation__card__title--courseName"
+                    ><strong
+                      >Curso: Programming for Everybody (Getting Started with
+                      Python)</strong
+                    ></span
+                  >
+                  <span>2020 - Coursera</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="graduation__card">
+              <figure class="graduation__card__content">
+                <img
+                  class="graduation__card__img"
+                  src="./assets/logo_estacio.svg"
+                  alt="Logo Estácio"
+                />
+                <figcaption class="graduation__card__title">
+                  <span class="graduation__card__title--courseName"
+                    ><strong>Tecnólogo: Redes de Computadores</strong></span
+                  >
+                  <span>2021 - Estácio de Sá</span>
+                </figcaption>
+              </figure>
+            </li>
+          </ol>
+        </section>
+      </div>
 
       <section class="works__container">
         <h2>Experiência profissional</h2>
@@ -259,22 +272,24 @@
               src="./assets/decoder.png"
               alt="Print do DecoderAlura"
             />
-            <p>
-              <span class="works__title">Decodificador de texto</span>
-              <span class="works__subTitle">Challenge Alura</span>
-            </p>
-            <a
-              href="https://github.com/paulovgl/Decoder_AluraOne"
-              class="general__button--unfilled"
-              target="_blank"
-              >Repositório</a
-            >
-            <a
-              href="https://paulovgl.github.io/Decoder_AluraOne/"
-              class="general__button--filled"
-              target="_blank"
-              >Ver demo</a
-            >
+            <div class="works__description">
+              <p>
+                <span class="works__title">Decodificador de texto</span>
+                <span class="works__subTitle">Challenge Alura</span>
+              </p>
+              <a
+                href="https://github.com/paulovgl/Decoder_AluraOne"
+                class="general__button--unfilled"
+                target="_blank"
+                >Repositório</a
+              >
+              <a
+                href="https://paulovgl.github.io/Decoder_AluraOne/"
+                class="general__button--filled"
+                target="_blank"
+                >Ver demo</a
+              >
+            </div>
           </li>
           <li class="works__content">
             <img
@@ -282,93 +297,102 @@
               src="./assets/talentos.png"
               alt="Printo do Contador de Talentos"
             />
-            <p>
-              <span class="works__title">Contador de Talentos OANSE</span>
-              <span class="works__subTitle">Desafio Pessoal</span>
-            </p>
-            <a
-              href="https://github.com/paulovgl/Oanse_TalentosCount"
-              class="general__button--unfilled"
-              target="_blank"
-              >Repositório</a
-            >
-            <a
-              href="https://paulovgl.github.io/Oanse_TalentosCount/"
-              class="general__button--filled"
-              target="_blank"
-              >Ver demo</a
-            >
+            <div class="works__description">
+              <p>
+                <span class="works__title">Contador de Talentos OANSE</span>
+                <span class="works__subTitle">Desafio Pessoal</span>
+              </p>
+              <a
+                href="https://github.com/paulovgl/Oanse_TalentosCount"
+                class="general__button--unfilled"
+                target="_blank"
+                >Repositório</a
+              >
+              <a
+                href="https://paulovgl.github.io/Oanse_TalentosCount/"
+                class="general__button--filled"
+                target="_blank"
+                >Ver demo</a
+              >
+            </div>
           </li>
         </ul>
       </section>
 
       <footer>
-        <section class="contato__container">
-          <div class="contato__title">
-            <h2>Contato</h2>
+        <div class="general_container--blueBackgroung">
+          <section class="contato__container">
+            <div class="contato__img"></div>
+            <div class="contato__content">
+              <div class="contato__title">
+                <h2>Contato</h2>
+                <p>
+                  Quer entrar em contato comigo?
+                  <br />
+                  Preencha o formulário e entrarei em contato o mais rápido
+                  possível.
+                </p>
+              </div>
+
+              <form>
+                <div class="contato__inputContainer">
+                  <input
+                    class="contato__input"
+                    id="contato__input--nome"
+                    placeholder=" "
+                    type="text"
+                  /><label for="contato__input--nome" class="contato__label">
+                    Nome
+                  </label>
+                </div>
+                <div class="contato__inputContainer">
+                  <input
+                    class="contato__input"
+                    id="contato__input--email"
+                    placeholder=" "
+                    type="email"
+                  /><label for="contato__input--email" class="contato__label">
+                    E-mail
+                  </label>
+                </div>
+                <div class="contato__inputContainer">
+                  <input
+                    class="contato__input"
+                    id="contato__input--assunto"
+                    placeholder=" "
+                    type="text"
+                  /><label for="contato__input--assunto" class="contato__label">
+                    Assunto
+                  </label>
+                </div>
+                <div class="contato__inputContainer">
+                  <textarea
+                    class="contato__input--textarea"
+                    id="contato__input--mensagem"
+                    placeholder="Mensagem"
+                    type="text"
+                  ></textarea>
+                </div>
+
+                <button
+                  class="general__button--filled contato__button"
+                  type="submit"
+                >
+                  Enviar Mensagem
+                </button>
+              </form>
+            </div>
+          </section>
+        </div>
+
+        <div class="general_container--whiteBackgroung">
+          <section class="copyright">
             <p>
-              Quer entrar em contato comigo?
-              <br />
-              Preencha o formulário e entrarei em contato o mais rápido
-              possível.
+              <span>Desenvolvido com &#128153; por Paulo Victor</span>
+              <span>2023</span>
             </p>
-          </div>
-
-          <form>
-            <div class="contato__inputContainer">
-              <input
-                class="contato__input"
-                id="contato__input--nome"
-                placeholder=" "
-                type="text"
-              /><label for="contato__input--nome" class="contato__label">
-                Nome
-              </label>
-            </div>
-            <div class="contato__inputContainer">
-              <input
-                class="contato__input"
-                id="contato__input--email"
-                placeholder=" "
-                type="email"
-              /><label for="contato__input--email" class="contato__label">
-                E-mail
-              </label>
-            </div>
-            <div class="contato__inputContainer">
-              <input
-                class="contato__input"
-                id="contato__input--assunto"
-                placeholder=" "
-                type="text"
-              /><label for="contato__input--assunto" class="contato__label">
-                Assunto
-              </label>
-            </div>
-            <div class="contato__inputContainer">
-              <textarea
-                class="contato__input--textarea"
-                id="contato__input--mensagem"
-                placeholder="Mensagem"
-                type="text"
-              ></textarea>
-            </div>
-
-            <button
-              class="general__button--filled contato__button"
-              type="submit"
-            >
-              Enviar Mensagem
-            </button>
-          </form>
-        </section>
-
-        <section class="copyright">
-          <p>
-            <span>Desenvolvido com &#128153; por Paulo Victor</span>
-            <span>2023</span>
-          </p>
-        </section>
+          </section>
+        </div>
       </footer>
     </main>
     <script></script>

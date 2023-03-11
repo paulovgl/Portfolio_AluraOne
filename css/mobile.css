@@ -4,11 +4,27 @@ body {
   font-family: "Raleway", cursive;
   background-color: var(--corDeFundo);
   color: var(--softBlack);
+  text-align: -webkit-center;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.general_container--blueBackgroung {
+  width: calc(100vw);
+  background-color: var(--softBlue);
+}
+
+.general_container--whiteBackgroung {
+  width: calc(100vw);
+  background-color: var(--white);
 }
 
 section,
 header {
   padding: 1rem;
+  max-width: 71rem;
 }
 
 h2 {
@@ -85,16 +101,33 @@ header h1 {
   align-items: center;
 }
 
-header a {
+.header__menu__list li {
+  display: none;
+}
+
+.header__menu__list li:last-child {
+  display: list-item;
+}
+
+.header__menu__list {
   font-size: 0.875rem;
   font-weight: 400;
 }
 
 /* Resume */
+.resume__container {
+  justify-content: start;
+  text-align: start;
+}
+
 .resume__container img {
   width: 30vw;
   height: 30vw;
   border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.resume__content h2 {
   margin-bottom: 1rem;
 }
 
@@ -110,6 +143,7 @@ header a {
 /* About */
 .about__container {
   background-color: var(--softBlue);
+  text-align: start;
 }
 
 .about__container h2 {
@@ -192,9 +226,8 @@ header a {
 }
 
 .graduation__card__img {
-  width: 10rem;
-  padding: 0.5rem;
-  height: 10vh;
+  width: 70%;
+  height: 20vh;
 }
 
 .graduation__card__title {
@@ -247,6 +280,7 @@ header a {
 .contato__container {
   padding: 2rem;
   background-color: var(--softBlue);
+  text-align: start;
 }
 
 .contato__title {

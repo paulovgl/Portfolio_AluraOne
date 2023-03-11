@@ -1,6 +1,9 @@
 @media (min-width: 768px) {
   /* Header */
-  header a {
+  header {
+    padding: 1rem 2rem;
+  }
+  .header__menu__list {
     font-weight: 700;
   }
 
@@ -41,7 +44,8 @@
   }
 
   /* Skills and Hobbies Cards */
-  .card, .card:nth-child(2n) {
+  .card,
+  .card:nth-child(2n) {
     width: calc(30% - 2rem);
     height: 12vw;
     margin-right: 5%;
