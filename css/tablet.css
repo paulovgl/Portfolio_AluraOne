@@ -68,10 +68,15 @@
   }
   .graduation__card {
     width: 30%;
-    margin-right: 5.00255681%;
+    margin-right: 5%;
   }
 
   .graduation__card:nth-child(3n) {
     margin-right: 0;
+  }
+
+  /* Footer - Contato */
+  .contato__button {
+    width: 25%;
   }
 }
