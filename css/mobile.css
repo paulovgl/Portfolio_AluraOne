@@ -91,32 +91,32 @@ header a {
 }
 
 /* Resume */
-.resume-container img {
+.resume__container img {
   width: 30vw;
   height: 30vw;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
 
-.resume-links {
+.resume__links {
   display: flex;
   justify-content: space-between;
 }
 
-.resume-links a {
+.resume__links a {
   font-weight: 600;
 }
 
 /* About */
-.about-container {
+.about__container {
   background-color: var(--softBlue);
 }
 
-.about-container h2 {
+.about__container h2 {
   margin-bottom: 1rem;
 }
 
-.about-container p {
+.about__container p {
   margin-bottom: 0;
 }
 
@@ -161,19 +161,19 @@ header a {
 }
 
 /* Skills and Hobbies */
-.skills-container,
-.hobbies-container {
+.skills__container,
+.hobbies__container {
   text-align: center;
 }
 
-.hobbies-container .card img {
+.hobbies__container .card img {
   width: 2rem;
   margin-bottom: 0.5rem;
   color: var(--strongBlue);
 }
 
 /* Graduation */
-.graduation-container {
+.graduation__container {
   background-color: var(--softBlue);
   text-align: center;
   padding: 2rem;
@@ -209,7 +209,7 @@ header a {
 }
 
 /* Works */
-.works-container {
+.works__container {
   padding: 2rem;
   text-align: center;
 }
@@ -244,16 +244,16 @@ header a {
 }
 
 /* Footer - Contato */
-.contato-container {
+.contato__container {
   padding: 2rem;
   background-color: var(--softBlue);
 }
 
-.contato-title {
+.contato__title {
   margin-bottom: 2rem;
 }
 
-.contato-title h2 {
+.contato__title h2 {
   margin-bottom: 0.5rem;
 }
 
