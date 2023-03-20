@@ -1,21 +1,59 @@
 export function validar(input) {
   const tipoDoInput = input.dataset.input;
+  const inputDiv = input.parentElement;
+  const inputP = inputDiv.childNodes[inputDiv.childNodes.length - 2];
 
-  if (isEmptyOrBlank(input)) {
-    return console.log(
-      "Este campo é obrigatório e não pode estar em branco ou vazio."
-    );
-  } else if (
-    tipoDoInput === "nome" ||
-    tipoDoInput === "assunto" ||
-    tipoDoInput === "mensagem"
-  ) {
-    !isOverLength(input, tipoDoInput)
-      ? console.log("Passou")
-      : console.log("Ficou");
-  } else if (tipoDoInput === "email") {
-    isValidEmail(input) ? console.log("Passou_2") : console.log("Ficou_2");
+  if (tipoDoInput === "nome" || tipoDoInput === "assunto") {
+    if (isEmptyOrBlank(input)) {
+      errorMessage(
+        "Este campo é obrigatório e não pode estar em branco ou vazio.",
+        inputP
+      );
+      return false;
+    } else if (isOverLength(input, tipoDoInput)) {
+      errorMessage("Este campo deve ter no máximo 50 caracteres.", inputP);
+      return false;
+    } else {
+      inputP.classList.remove("contato__inputErrorMessage--show");
+      return true;
+    }
   }
+
+  if (tipoDoInput === "mensagem") {
+    if (isEmptyOrBlank(input)) {
+      errorMessage(
+        "Este campo é obrigatório e não pode estar em branco ou vazio.",
+        inputP
+      );
+      return false;
+    } else if (isOverLength(input, tipoDoInput)) {
+      errorMessage("Este campo deve ter no máximo 300 caracteres.", inputP);
+      return false;
+    } else {
+      inputP.classList.remove("contato__inputErrorMessage--show");
+      return true;
+    }
+  }
+
+  if (tipoDoInput === "email") {
+    if (isEmptyOrBlank(input)) {
+      errorMessage(
+        "Este campo é obrigatório e não pode estar em branco ou vazio.",
+        inputP
+      );
+      return false;
+    } else if (!isValidEmail(input)) {
+      errorMessage("O e-mail inserido é inválido.", inputP);
+      return false;
+    } else {
+      inputP.classList.remove("contato__inputErrorMessage--show");
+      return true;
+    }
+  }
+}
+
+export function clearFields(input) {
+  input.value = "";
 }
 
 // Funções Internas
@@ -31,23 +69,19 @@ function isEmptyOrBlank(input) {
 }
 
 function isOverLength(input, tipoDoInput) {
-  const maxLength = new RegExp(/^.{3,50}$/);
-  const maxLengthTextArea = new RegExp(/^.{3,300}$/);
-  switch (tipoDoInput) {
-    case "mensagem":
-      if (input.value.match(maxLengthTextArea)) {
-        return false;
-      } else {
-        return true;
-      }
+  let boolean = false;
 
-    default:
-      if (input.value.match(maxLength)) {
-        return false;
-      } else {
-        return true;
-      }
+  if (tipoDoInput === "mensagem") {
+    if (input.value.length > 300) {
+      boolean = true;
+    }
+  } else {
+    if (input.value.length > 50) {
+      boolean = true;
+    }
   }
+
+  return boolean;
 }
 
 function isValidEmail(input) {
@@ -58,4 +92,9 @@ function isValidEmail(input) {
   } else {
     return false;
   }
+}
+
+function errorMessage(text, p) {
+  p.innerHTML = `${text}`;
+  p.classList.add("contato__inputErrorMessage--show");
 }

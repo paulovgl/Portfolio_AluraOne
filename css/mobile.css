@@ -362,6 +362,16 @@ header h1 {
   top: 0.5rem;
 }
 
+.contato__inputErrorMessage {
+  display: none;
+}
+
+.contato__inputErrorMessage--show {
+  color: var(--softRed);
+  display: block;
+  margin-bottom: 0;
+}
+
 /* Footer - Copyright */
 .copyright {
   align-items: center;

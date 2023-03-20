@@ -48,7 +48,13 @@
           <li><a class="header__menu__link" href="#hobbies">Hobbies</a></li>
           <li><a class="header__menu__link" href="#graduation">Formação</a></li>
           <li><a class="header__menu__link" href="#works">Projetos</a></li>
-          <li><a class="header__menu__link header__menu__link--bold" href="mailto:ditoprimo@gmail.com">ditoprimo@gmail.com</a></li>
+          <li>
+            <a
+              class="header__menu__link header__menu__link--bold"
+              href="mailto:ditoprimo@gmail.com"
+              >ditoprimo@gmail.com</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -345,6 +351,7 @@
                   /><label for="contato__input--nome" class="contato__label">
                     Nome
                   </label>
+                  <p class="contato__inputErrorMessage"></p>
                 </div>
                 <div class="contato__inputContainer">
                   <input
@@ -356,6 +363,7 @@
                   /><label for="contato__input--email" class="contato__label">
                     E-mail
                   </label>
+                  <p class="contato__inputErrorMessage"></p>
                 </div>
                 <div class="contato__inputContainer">
                   <input
@@ -367,6 +375,7 @@
                   /><label for="contato__input--assunto" class="contato__label">
                     Assunto
                   </label>
+                  <p class="contato__inputErrorMessage"></p>
                 </div>
                 <div class="contato__inputContainer">
                   <textarea
@@ -376,11 +385,13 @@
                     type="text"
                     data-input="mensagem"
                   ></textarea>
+                  <p class="contato__inputErrorMessage"></p>
                 </div>
 
                 <button
                   class="general__button--filled contato__button"
                   type="submit"
+                  data-button
                 >
                   Enviar Mensagem
                 </button>
